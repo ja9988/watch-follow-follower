@@ -2,10 +2,10 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    image: ghcr.io/tomacheese/watch-follow-follower:latest
     volumes:
       - type: bind
         source: ./data
-        target: /data
+        target: /data/
     init: true
     restart: always
